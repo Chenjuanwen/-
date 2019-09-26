@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--html lang="en"-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +7,29 @@
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="login.css"/>
     <script type="text/javascript" src="login.js"></script>
+    <!--
+
+	       您的浏览器不支持JavaScript，请查看;
+
+	//-->
 </head>
 
 <body bgcolor="#0">
     <div id="login_frame">   
 
-        <!p id="image_logo"><!img src="images/login/login.png"></p>  
+        
 
-        <form method="post" action="login.js">  
+        <form method="post">  
 
-            <p><!label class="label_input">用户名&nbsp;&nbsp;</label><input type="text" id="username" class="text_field"/></p>  
+            <p>用户名&nbsp;&nbsp;<input placeholder="请输入用户名" type="text" id="username" class="text_field"/></p>  
 
-            <p><!label class="label_input">密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="text" id="password" class="text_field"/></p>  
+            <p>密&emsp;码&nbsp;&nbsp;<input placeholder="请输入密码" type="text" id="password" class="text_field"/></p>  
 
             <div id="login_control">        
 
-                <input type="button" id="btn_login" value="登录" οnclick="login();"/>
+                <button id="btn_login" style="cursor:pointer" onclick="login()">登录</button>
 
-                <input type="button" id="btn_login" value="注册" οnclick="regist();"/>
+                <button id="btn_login" style="cursor:pointer" onclick="window.open('regist.html')">注册</button>
 
                 <a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>        
 
