@@ -1,20 +1,50 @@
+//<script type="text/javascript" src="jQuery.js"></script>
+var ss=[ ];
 function product_suanshi(){
 
     var obj=window.document.getElementById("select_number");
     var number=1;
     //var number=obj.options[obj.selectedIndex].value;
-    var suanshi=['1+1=','2'];
+	var suanshi=['1+1=','2'];
+	ss=suanshi;
     //var suanshi=product(number);
     var ul=document.getElementById("neirong_ul");
     var li=document.createElement("li");
     li.innerHTML =
         '<li style="color:#000;">'+suanshi[0]+
-		'<input type="text" size="3" zqda="'+suanshi[1]+'" onkeyup="quanjiao_zhuan_banjiao(this);" />'+
-        '<span class="daan_show"></span>'+
-        '<i class="s_jieguo"></i>'+
+		'<input type="text" class="shuru" size="3" onkeyup="quanjiao_zhuan_banjiao(this);" />'+
+        '<span class="daan_show" ></span>'+
+        '<i class="s_jieguo" style="display:inline;"></i>'+
 		'</li>'
+	//$("#shuru1").attr("")
     ul.appendChild(li);
         //$('.document').append(li);
+}
+/*function quanjiao_zhuan_banjiao(this){
+
+}*/
+function product_dengshi(){
+	
+	var inputs = document.getElementsByClassName("shuru");
+	var spans = document.getElementsByClassName("daan_show");
+	var iclass = document.getElementsByClassName("s_jieguo");
+    for (var i = 0; i < inputs.length; i++) {
+      //判断这个元素是不是按钮
+      if (inputs[i].type == "text") {
+		  inputs[i].style="display:none;";
+		  spans[i].value=inputs[i].value;//输入答案的赋值
+		  spans[i].innerHTML=spans[i].value;//输入答案的显示
+		  var res = String(ss[1]);
+		  var ret = String(inputs[i].value);
+		  if(res==ret){//输入正确
+			  iclass[i].innerHTML='<h7>正确</h7>'
+		  }
+		  else{//输入错误
+			iclass[i].innerHTML='<h7>答案：'+ss[1]+'</h7>'
+		  }
+        
+      }
+    }
 
 }
 function product(number){
