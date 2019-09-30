@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Regist</title>
     <link rel="stylesheet" type="text/css" href="login.css"/>
-    <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="regist.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
     <!--
 
 	       您的浏览器不支持JavaScript，请查看;
@@ -14,26 +15,32 @@
 	//-->
 </head>
 
-<body bgcolor="#0">
+<body style="background-color:black;">
     <div id="login_frame">   
 
         
 
         <form method="post">  
 
-            <p>用户名&nbsp;&nbsp;<input placeholder="请输入用户名" type="text" id="username" class="text_field"/></p>  
+            <p>用&nbsp;户&nbsp;名&nbsp;&nbsp;<input placeholder="请输入用户名" type="text" id="setname" class="text_field"/></p>  
 
-            <p>密&emsp;码&nbsp;&nbsp;<input placeholder="请输入密码" type="text" id="password" class="text_field"/></p>  
+            <p>设置密码&nbsp;<input placeholder="请输入密码" type="text" id="password1" class="text_field"/></p> 
 
-            <div id="login_control">        
+            <p>确认密码&nbsp;<input placeholder="请再次输入密码" type="text" id="password2" class="text_field"/></p> 
 
-                <button id="btn_login" style="cursor:pointer" onclick="login()">登录</button>
 
-                <button id="btn_login" style="cursor:pointer" onclick="window.open('regist.html')">注册</button>
+            <div id="regist_control">        
 
-                <a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>        
-
+                <button class="btn_regist" style="cursor:pointer" onclick="regist_result()">注册</button>    
+                
+                
             </div>    
+
+            <div class="return_control"> 
+
+                <button class="btn_login" style="cursor:pointer" onclick="window.open('main.html')">返回题库</button>
+
+            </div>
         </form>
     </div>
         
