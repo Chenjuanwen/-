@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="suanshi.css" />
+    <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="suanshi.js"></script>
     <title>算式</title>
+    <!--script>
+        @font-face { 
+             font-family: "fz";//命名 src: url("字体包路径"); 
+        }
+     </script-->
     <style type="text/css">
 
     </style>
@@ -15,54 +21,79 @@
 
 </head>
 
-<body >
+<body>
     <div class="secondbg">
+        <div class="first_title">
 
-        <div style="float:right;">
+            <div style="float:right;">
 
-            <a href="#" onclick="javascript:addfavorite();">加入收藏</a>
+                <a href="#" onclick="javascript:addfavorite();">加入收藏</a>
 
-            <a style="color:#F00;" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
+                <a style="color:#F00;" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
+            </div>
+            
+            <div style="float:left;">
+
+                <a href="main.html" target="_self">四则运算题库</a>
+            </div>
+            
+            <!--div class="huisefengexian"></div-->
+
+        </div>
+        <div>
+
+            <h1 style="color:#000;" class="leixing" style="float:none" text-align="center;" width="120px;" height="28px;">5以内加减法</h1>
+
         </div>
 
-        <p></p>
-
-        <h1 style="color:#000;" text-align="center;" width="120px;" height="28px;" margin="0">四则运算题库</h1>
-
+        <div class="huixian"></div>
         <div id="main">
  
-            <ul id="shuju">
+            <div id="show_time">
+             <!--显示时间、选择题数、得分的块-->   
+                    <ul id="shuju">
                 
-                <li style="color:#000;">剩余时间：<span id="time"></span></li>
-                
-                <li style="color:#000;">题数：<!--script id="sunshi_number" type="text/javascript">product_suanshi()</script-->
-
-                    <select id="select_number" onchange="product_suanshi()">
-                            <option value="1">10</option>
-                            <option value="2">20</option>
-                            <option value="3">30</option>
-                            <option value="4">40</option>
-                            <option value="5">50</option>
-                            <option value="6">60</option>
-                            <option value="7">70</option>
-                            <option value="8">80</option>
-                            <option value="9">90</option>
-                    </select>
-                
-                </li>
-
-                
-                <li style="color:#000;"
-                >得分：<span id="grade"></span></li>
+                            <li style="color:#000;">剩余时间：<span id="time"></span></li>
+                            
+                            <li style="color:#000;">题数：<!--script id="sunshi_number" type="text/javascript">product_suanshi()</script-->
             
-            </ul>
+                                <select id="select_number" onchange="product_suanshi()">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                        <option value="4">40</option>
+                                        <option value="5">50</option>
+                                        <option value="6">60</option>
+                                        <option value="7">70</option>
+                                        <option value="8">80</option>
+                                        <option value="9">90</option>
+                                </select>
+                            
+                            </li>
+            
+                            
+                            <li style="color:#000;"
+                            >得分：<span id="grade"></span></li>
+                        
+                        </ul>
+            </div>
+            <div class="huixian"></div>
             <div id="suanshi">
                 <ul id="neirong_ul">
                     
 
 
-                    
+
                 </ul>
+            </div>
+
+
+            <div class="bottom_button" >
+               
+                <input type="button" onclick="product_dengshi();" value="提交试卷" class="all_an_1" />
+
+                <input type="button" onclick="product_suanshi();" value="换卷" class="all_an_1" />
+    
             </div>
         
         </div>
