@@ -1,0 +1,144 @@
+
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.secondbg {
+    color:#FFFFFF;
+    background-color: #FFFFFF;
+    width:85%;
+    height: 100%;
+    margin:0 auto;
+    text-align:center;
+    }
+
+body {
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #000;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+  /*margin: 0;*/
+    border: 0;
+}
+.first_title{
+    clear: both;
+    overflow: hidden;
+    line-height: 25px;
+    height: 25px;
+    background-repeat: repeat-x;
+    background-position: 0 -162px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.leixing {
+    font-family: "YouYuan";
+    margin: 0px;
+    padding: 15px;
+}
+
+#shuju
+li{
+    width:33%;
+    float:left;
+    display: block;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+}
+
+#neirong_ul
+li{
+    width:50%;
+    display: inline-block;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+}
+
+/*input   {  
+    FONT-SIZE:   12px;    
+    height:100px; 
+    line-height:100px;
+  }  
+input.text{
+    text-align:center
+}*/
+.secondbg {
+    color:#FFFFFF;
+    background-color: #FFFFFF;
+    width:85%;
+    margin:0 auto;
+    text-align:center;
+    }
+
+.all_an_1 {    
+    font-size: 14px;    
+    font-family: 宋体;
+    width: 120px;    
+    height: 28px;    
+    line-height: 28px;   
+    margin-right: 10px; 
+    margin-top: 10px;
+    text-align: center;     
+    color: white;    
+    background-color: #9ACD32;    
+    border-radius: 6px;    
+    border: 0;     
+    float: center;
+} 
+.all_an_1:hover {
+    background-color: #8E8E38;
+}
+
+
+/*active 要在后面 否则会被hover覆盖*/
+
+
+.all_an_1:active {
+    background-color: #000000;
+}
+
+#main {
+    text-align:center;
+    align-content: center;
+    align:center;
+    
+}
+.huixian{
+    background-color: black;
+    width: 95%;
+    margin:0 auto;
+    padding:0;
+    height:5px;
+}
+#show_time{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    height: 30px;
+}
+#suanshi{
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    height: 600px;
+}
+#shizi{
+    font-family: "YouYuan";
+    margin: 2px;
+    padding: 2px;
+    width:40%;
+    height:60px;
+    display:inline-block;
+    text-align: center;
+}
