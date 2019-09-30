@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="login.css"/>
     <script type="text/javascript" src="login.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
     <!--
 
 	       您的浏览器不支持JavaScript，请查看;
@@ -14,7 +15,19 @@
 	//-->
 </head>
 
-<body bgcolor="#0">
+<body style="background-color:cadetblue;">
+    <div style="float:right;">
+
+        <a href="#" onclick="javascript:addfavorite();">加入收藏</a>
+
+        <a style="color:#F00;" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
+    </div>
+    <div style="float:left;">
+
+        <a id="return_tiku" href="main.html" target="_self">/返回题库</a>    
+
+    </div>
+
     <div id="login_frame">   
 
         
@@ -27,14 +40,18 @@
 
             <div id="login_control">        
 
-                <button id="btn_login" style="cursor:pointer" onclick="login()">登录</button>
+                <button class="btn_login" style="cursor:pointer" onclick="login()">登录</button>
 
-                <button id="btn_login" style="cursor:pointer" onclick="window.open('regist.html')">注册</button>
+                <button class="btn_login" style="cursor:pointer" onclick="window.open('regist.html')" >注册</button>    
 
-                <a id="forget_pwd" href="forget_pwd.html">忘记密码？</a>        
+            </div>   
 
-            </div>    
         </form>
+        <div class="return_control"> 
+
+                <!--button class="btn_login" style="cursor:pointer" onclick="window.open('main.html')">返回题库</button--->
+
+        </div>
     </div>
         
     
