@@ -1,0 +1,94 @@
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    height:100%;
+}
+body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+  /*margin: 0;*/
+    border: 0;
+}
+.secondbg {
+    color:#FFFFFF;
+    background-color: #FFFFFF;
+    width:85%;
+    height: 100%;
+    margin:0 auto;
+    text-align:center;
+    }
+
+.leixing {
+    font-family: "YouYuan";
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+}
+.left {
+    font-family: "YouYuan";
+    margin: 5px;
+    padding: 10px;
+    width:40%;
+    height:300px;
+    display:inline-block;
+    background-color: #7A991A;
+    text-align: center;
+}
+.huixian{
+    background-color: black;
+    width: 90%;
+    margin:0 auto;
+    padding:0;
+    height:5px;
+}
+.little_left {
+    font-family: "YouYuan";
+    margin: 2px;
+    padding: 2px;
+    width:40%;
+    height:60px;
+    display:inline-block;
+    background-color: aquamarine;
+    text-align: center;
+}
+.header{
+    position:absolute;
+    top:200px;
+    left:100px;
+    }
+    
+    .header ul{
+    list-style-type:none;
+    margin-top:100px;
+    }
+    .header li{
+    margin-top:20px;
+    margin-right:100px;
+    vertical-align:middle;
+    padding:70px;
+    
+    float:left;
+    
+    }
+    .header a:link,a:visited
+    {
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#98bf21;
+    text-align:center;
+    padding:20px;
+    text-decoration:none;
+    text-transform:uppercase;
+    }
+    .header a:hover,a:active
+    {
+    background-color:#7A991A;
+    }
