@@ -19,7 +19,7 @@
 form p > * {    
     display: inline-block;    
     vertical-align: middle;
-} 
+}
 
 .text_field {    
     width: 278px;    
@@ -31,10 +31,10 @@ form p > * {
     border: 0;
     opacity: 0.5;
 } 
-#btn_login {    
+.btn_login {    
     font-size: 14px;    
-    font-family: 宋体;     
-    width: 120px;    
+    font-family: YouYuan;
+    width: 160px;    
     height: 28px;    
     line-height: 28px;   
     margin-right: 10px; 
@@ -46,7 +46,7 @@ form p > * {
     float: left;
 } 
 
-#btn_login:hover {
+.btn_login:hover {
     background-color: #8E8E38;
 }
 
@@ -54,7 +54,34 @@ form p > * {
 /*active 要在后面 否则会被hover覆盖*/
 
 
-#btn_login:active {
+.btn_login:active {
+    background-color: #000000;
+}
+
+.btn_regist {    
+    font-size: 14px;    
+    font-family: 宋体;     
+    width: 120px;    
+    height: 28px;    
+    line-height: 28px;   
+    margin-right: 10px; 
+    text-align: center;     
+    color: white;    
+    background-color: #9ACD32;    
+    border-radius: 6px;    
+    border: 0;     
+    float:middle;
+} 
+
+.btn_regist:hover {
+    background-color: #8E8E38;
+}
+
+
+/*active 要在后面 否则会被hover覆盖*/
+
+
+.btn_regist:active {
     background-color: #000000;
 }
 
@@ -73,8 +100,21 @@ form p > * {
     text-decoration: underline;
 } 
 #login_control {    
-    padding: 0 28px;
+    padding: 28px;
 }
+#return_tiku {    
+    font-size: 12px;    
+    color: white;    
+    text-decoration: none;    
+    position: relative;    
+    float: right;    
+    top: 5px; 
+} 
+#return_tiku:hover {    
+    color: blue;    
+    text-decoration: underline;
+} 
+
 
 .header{
     position:absolute;
