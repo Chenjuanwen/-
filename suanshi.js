@@ -1,5 +1,6 @@
-//<script type="text/javascript" src="jQuery.js"></script>
-var ss;
+
+var ss;//全局变量，用于存储算式答案
+//显示算式的函数，包括调用产生函数的步骤
 function product_suanshi(){
 
     var obj=window.document.getElementById("select_number");
@@ -16,10 +17,12 @@ function product_suanshi(){
 	//var suanshi=product(number);
 	ss=suanshi;
 	var ul=document.getElementById("neirong_ul");
+	//ul.remove();
+	$(ul).html("");
 	for(k=0;k<number;k++){
     var li=document.createElement("li");
     li.innerHTML =
-        '<li style="color:#000;">'+suanshi[k][0]+
+        '<li class="shizi" style="color:#000;">'+suanshi[k][0]+
 		'<input type="text" class="shuru" size="3" onkeyup="quanjiao_zhuan_banjiao(this);" />'+
         '<span class="daan_show" ></span>'+
         '<i class="s_jieguo" style="display:inline;"></i>'+
@@ -32,6 +35,9 @@ function product_suanshi(){
 /*function quanjiao_zhuan_banjiao(this){
 
 }*/
+
+
+//生成算式，返回字符串形式的算式和结果
 function product_dengshi(){
 	
 	var inputs = document.getElementsByClassName("shuru");
@@ -46,23 +52,27 @@ function product_dengshi(){
 		  var res = String(ss[i][1]);
 		  var ret = String(inputs[i].value);
 		  if(res==ret){//输入正确
-			  iclass[i].innerHTML='<h7>正确</h7>'
+			  iclass[i].innerHTML='<h7 style="color:green;">  正确</h7>'
 		  }
 		  else{//输入错误
-			iclass[i].innerHTML='<h7>答案：'+ss[i][1]+'</h7>'
+			iclass[i].innerHTML='<h7 style="color:red;">  答案：'+ss[i][1]+'</h7>'
 		  }
         
       }
     }
 
 }
+
+
+//你要改的！！！！！！！！
+//!!!!!!!!!!!!!!!!!!!!!!!
 function product(number){
     var tArray = new Array(); //先声明一维
     for(var k=0;k<number;k++){ //一维长度为要生成算式个数
 		tArray[k]=new Array(); //声明二维，每一个一维数组里面的一个元素都是一个数组，这个数组有两个元素，都是字符形式；
 		                        //第一个是运算式，第二个是答案（运算式带等号）
 
-    //生成式子    
+    //生成式子 ,以下你要改   
     var  x;//存放结果
     //生成数值和运算符号
 	var a=[Math.ceil(Math.random()*10),Math.ceil(Math.random()*10),Math.ceil(Math.random()*10)];//生成随机0~10以内数
@@ -76,8 +86,8 @@ function product(number){
 				x = a[0] + a[1] + a[2];
 				if ((x <= 100)&&(x>=0))
 				{
-                    tArray[k][0]=String(a[0])+'+'+String(a[1])+'+'+String(a[2])+'=';
-                    tArray[k][1]=String(X);
+                    tArray[k][0]=String(a[0])+'+'+String(a[1])+'+'+String(a[2])+'=';//把生成的的式子放到二维数组里
+                    tArray[k][1]=String(X);//把生成的结果也放进去
                 }
 				else
 					k--;
