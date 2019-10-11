@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<!--html lang="en"-->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="login.css"/>
-    <script type="text/javascript" src="login.js"></script>
-    <script type="text/javascript" src="jquery.js"></script>
-    <!--
-
-	       您的浏览器不支持JavaScript，请查看;
-
-	//-->
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- <script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
 </head>
 
-<body style="background-color:cadetblue;">
+<body style="background-color:rgb(95, 158, 160);">
     <div style="float:right;">
 
-        <a href="#" onclick="javascript:addfavorite();">加入收藏</a>
+        <a href="#" style="color:azure" onclick="javascript:addfavorite();">加入收藏</a>
 
-        <a style="color:#F00;" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
+        <a style="color:rgb(31, 30, 31);" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
     </div>
     <div style="float:left;">
 
-        <a id="return_tiku" href="main.html" target="_self">/返回题库</a>    
+        <a id="return_tiku" href="index.html" target="_self">/返回题库</a> 
 
     </div>
 
@@ -32,26 +28,21 @@
 
         
 
-        <form method="post">  
+        <form>  
 
-            <p>用户名&nbsp;&nbsp;<input placeholder="请输入用户名" type="text" id="username" class="text_field"/></p>  
+            <p>学&emsp;号&nbsp;&nbsp;<input placeholder="请输入学号" type="text" id="userid" class="text_field" /></p>  
 
             <p>密&emsp;码&nbsp;&nbsp;<input placeholder="请输入密码" type="text" id="password" class="text_field"/></p>  
 
             <div id="login_control">        
 
-                <button class="btn_login" style="cursor:pointer" onclick="login()">登录</button>
+                <button class="btn_login" style="cursor:pointer" onclick="login()" >登录</button>
 
                 <button class="btn_login" style="cursor:pointer" onclick="window.open('regist.html')" >注册</button>    
 
             </div>   
 
         </form>
-        <div class="return_control"> 
-
-                <!--button class="btn_login" style="cursor:pointer" onclick="window.open('main.html')">返回题库</button--->
-
-        </div>
     </div>
         
     
