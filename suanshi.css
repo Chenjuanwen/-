@@ -5,17 +5,11 @@
     margin: 0;
     border: 0;
 }
-.secondbg {
-    color:#FFFFFF;
-    background-color: #FFFFFF;
-    width:85%;
-    height: 100%;
-    margin:0 auto;
-    text-align:center;
-    }
-
+html{
+    height:100%;
+}
 body {
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     background-color: #000;
     text-align: center;
@@ -24,16 +18,24 @@ body {
   /*margin: 0;*/
     border: 0;
 }
+.secondbg {
+    color:#FFFFFF;
+    background-color: #FFFFFF;
+    width:85%;
+    height: 100%;
+    margin:0 auto;
+    text-align:center;
+    }
 .first_title{
     clear: both;
     overflow: hidden;
     line-height: 25px;
-    height: 25px;
+    height: 30px;
     background-repeat: repeat-x;
-    background-position: 0 -162px;
-    border-bottom-width: 1px;
+    /* background-position: 0 -162px; */
+    /* border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: #fff;
+    border-bottom-color: #fff; */
     padding-right: 8px;
     padding-left: 8px;
 }
@@ -42,6 +44,7 @@ body {
     font-family: "YouYuan";
     margin: 0px;
     padding: 15px;
+    height: 35px;
 }
 
 #shuju
@@ -54,14 +57,14 @@ li{
     line-height: 20px;
 }
 
-#neirong_ul
+ #neirong_ul
 li{
-    width:50%;
+    width:33%;
     display: inline-block;
     overflow: hidden;
-    height: 20px;
+    height: 30px;
     line-height: 20px;
-}
+} 
 
 /*input   {  
     FONT-SIZE:   12px;    
@@ -71,13 +74,7 @@ li{
 input.text{
     text-align:center
 }*/
-.secondbg {
-    color:#FFFFFF;
-    background-color: #FFFFFF;
-    width:85%;
-    margin:0 auto;
-    text-align:center;
-    }
+
 
 .all_an_1 {    
     font-size: 14px;    
@@ -87,15 +84,17 @@ input.text{
     line-height: 28px;   
     margin-right: 10px; 
     margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;     
     color: white;    
-    background-color: #9ACD32;    
+    background-color: rgb(94, 95, 92);    
     border-radius: 6px;    
     border: 0;     
     float: center;
+    cursor: pointer;
 } 
 .all_an_1:hover {
-    background-color: #8E8E38;
+    background-color: rgb(51, 51, 50);
 }
 
 
@@ -122,6 +121,7 @@ input.text{
 #show_time{
     width: 95%;
     text-align: center;
+    
     margin: 0 auto;
     padding: 10px;
     height: 30px;
@@ -133,12 +133,36 @@ input.text{
     padding: 10px;
     height: 600px;
 }
-#shizi{
-    font-family: "YouYuan";
-    margin: 2px;
-    padding: 2px;
-    width:40%;
-    height:60px;
-    display:inline-block;
-    text-align: center;
+.shizi{
+    width:100%;
+    display: inline-block;
+    overflow: hidden;
+    height: 30px;
+    line-height: 20px;
+}
+input {
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+#clock{
+    color: #000;
 }
