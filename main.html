@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="js/main.js"></script>
 <title>四则运算题库</title>
 <style type="text/css">
 
@@ -13,24 +14,23 @@
 
 </head>
 <body>
-    <!--script>
-        var storage=window.localStorage;
-        var c = storage.getItem("username");
-        alert(String(c));
-</script-->
+    
         <div class="secondbg">
             <div class="first_title">
     
                 <div style="float:right;">
     
-                    <a href="#" onclick="javascript:addfavorite();">加入收藏</a>
+                    <a href="#" style="color:rgb(49, 120, 133);" onclick="javascript:addfavorite();">加入收藏</a>
     
-                    <a style="color:#F00;" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
+                    <a style="color:rgb(31, 30, 31);" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
                 </div>
 
                 <div style="float:left;">
     
-                    <a style="color:#F00;" href="user.html" target="_blank" rel="nofollow">个人中心</a>
+                    <a style="color:rgb(182, 141, 201);" href="stu_info.html" target="_blank" rel="nofollow">个人中心</a>
+
+                    <a style="color:rgb(49, 120, 133);" href="login.html" target="_blank" rel="nofollow">登录</a>
+
                 </div>
                 
                 <!--div class="huisefengexian"></div-->
@@ -38,7 +38,7 @@
             </div>
             <div>
     
-                <h1 style="color:#000;" class="leixing" style="float:none" text-align="center;" width="120px;" height="28px;">四则运算题库</h1>
+                <h1 style="color:#000;" class="leixing" style="float:none" text-align="center;" width="120px;" height="50px;" >四则运算题库</h1>
     
             </div>
     
@@ -46,61 +46,77 @@
             <div id="main">
                     <div class="header">
                         <div class="left">
-                                <h2 style="color:#000;" class="nianji" text-align="left;" width="50px;" height="12px;">一年级上</h2>
+                                <h2  class="nianji" text-align="left;" width="50px;" height="12px;" margin="5px;">一年级上</h2>
                                 <div class="huixian"></div>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('suanshi.html')" >一年级上一单元</button>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn101" onclick="window.open('suanshi.html')" >一年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn102" onclick="window.open('#')" >一年级上二单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn103" onclick="window.open('#')" >一年级上三单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn104" onclick="window.open('#')" >一年级上四单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn105" onclick="window.open('#')" >一年级上五单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn106" onclick="window.open('#')" >一年级上六单元</button>
 
                         </div>
                         <div class="left">
-                                <h2 style="color:#000;" class="nianji" text-align="left;" width="50px;" height="12px;">一年级上</h2>
+                                <h2  class="nianji" text-align="left;" width="50px;" height="12px;" margin="5px;">一年级下</h2>
                                 <div class="huixian"></div>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn111" onclick="window.open('suanshi.html')" >一年级下一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn112" onclick="window.open('#')" >一年级下二单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn113" onclick="window.open('#')" >一年级下三单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn114" onclick="window.open('#')" >一年级下四单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn115" onclick="window.open('#')" >一年级下五单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn116" onclick="window.open('#')" >一年级下六单元</button>
 
                         </div>
                         <div class="left">
-                                <h2 style="color:#000;" class="nianji" text-align="left;" width="50px;" height="12px;">一年级上</h2>
+                                <h2  class="nianji" text-align="left;" width="50px;" height="12px;" margin="5px;">二年级上</h2>
                                 <div class="huixian"></div>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn201" onclick="window.open('suanshi.html')" >二年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn202" onclick="window.open('#')" >二年级上二单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn203" onclick="window.open('#')" >二年级上三单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn204" onclick="window.open('#')" >二年级上四单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn205" onclick="window.open('#')" >二年级上五单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn206" onclick="window.open('#')" >二年级上六单元</button>
+                        </div>
+                        <div class="left">
+                                <h2  class="nianji" text-align="left;" width="50px;" height="12px;" margin="5px;">二年级下</h2>
+                                <div class="huixian"></div>
+                                <button class="little_left" style="cursor:pointer" id="btn211" onclick="window.open('suanshi.html')" >二年级下一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn212" onclick="window.open('#')" >二年级下二单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn213" onclick="window.open('#')" >二年级下三单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn214" onclick="window.open('#')" >二年级下四单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn215" onclick="window.open('#')" >二年级下五单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn216" onclick="window.open('#')" >二年级下六单元</button>
+
 
                         </div>
                         <div class="left">
-                                <h2 style="color:#000;" class="nianji" text-align="left;" width="50px;" height="12px;">一年级上</h2>
+                                <h2 class="nianji" text-align="left;" width="50px;" height="12px;" margin="5px;">三年级上</h2>
                                 <div class="huixian"></div>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-
+                                <button class="little_left" style="cursor:pointer" id="btn301" onclick="window.open('suanshi.html')" >三年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn302" onclick="window.open('#')" >三年级上二单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn303" onclick="window.open('#')" >三年级上三单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn304" onclick="window.open('#')" >三年级上四单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn305" onclick="window.open('#')" >三年级上五单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn306" onclick="window.open('#')" >三年级上六单元</button>
                         </div>
                         <div class="left">
-                                <h2 style="color:#000;" class="nianji" text-align="left;" width="50px;" height="12px;">一年级上</h2>
+                                <h2 class="nianji" text-align="left;" width="50px;" height="12px;" margin="5px;">三年级下</h2>
                                 <div class="huixian"></div>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn311" onclick="window.open('suanshi.html')" >三年级下一单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn312" onclick="window.open('#')" >三年级下二单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn313" onclick="window.open('#')" >三年级下三单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn314" onclick="window.open('#')" >三年级下四单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn315" onclick="window.open('#')" >三年级下五单元</button>
+                                <button class="little_left" style="cursor:pointer" id="btn316" onclick="window.open('#')" >三年级下六单元</button>
+
 
                         </div>
-                        <div class="left">
-                                <h2 style="color:#000;" class="nianji" text-align="left;" width="50px;" height="12px;">一年级上</h2>
-                                <div class="huixian"></div>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-                                <button class="little_left" style="cursor:pointer" onclick="window.open('#')" >一年级上一单元</button>
-
-                        </div>
-                        
-                            <ul>
-                            <li ><a href="Grade1.html">一年级</a></li>
-                            <li ><a href="Grade2.html">二年级</a></li>
-                            <li ><a href="Grade3.html">三年级</a></li>
-                            <li ><a id="login_button" href="login.html">登录</a></li>
                             
-                            </ul>
-                            
-                            </div>
+                        </div><!--header end-->
      
-            </div>
+            </div><!--main end-->
         
-        </div>
+        </div><!--secondbg end-->
     
     
     </body>
