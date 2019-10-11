@@ -1,0 +1,188 @@
+*{
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+html{
+    min-height:100%;
+}
+body {
+    min-height: 100%;
+    margin: 0 ;
+    background-color: #000;
+    text-align: center;
+    outline: 0;
+    padding: 0;
+  /*margin: 0;*/
+    border: 0;
+}
+.secondbg {
+    color:#FFFFFF;
+    background-color: #FFFFFF;
+    width:85%;
+    height: 100%;
+    margin:0 auto;
+    text-align:center;
+    }
+
+.first_title{
+    width: 100%;
+    height: 25px;
+}
+
+.leixing {
+    font-family: "YouYuan";
+    margin: 0px;
+    padding: 5px;
+}
+.huixian{
+    background-color: black;
+    width: 95%;
+    margin:0 auto;
+    padding:0;
+    height:5px;
+}
+.class{
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+    /* text-align: left; */
+}
+.usermessage{
+    width: 95%;
+    height: 45px;
+    margin: 0 auto; 
+    /* text-align: center; */
+}
+.user_mes{
+    width:30%;
+    float:left;
+    /* display: block; */
+    overflow: hidden;
+    height: 30px;
+    line-height: 20px;
+    text-align: left;
+    color: #000;
+    padding: 6px;
+}
+#personal_center{
+    width: 100%;
+    height: 40px;
+    margin:5px;
+    padding: 5px;
+}
+
+.btn_show{
+   width: 100%;
+   height: 35px;
+   margin-top: 10px;
+   padding: 5px;
+   background-color: rgb(185, 181, 181);
+   color:#fff;
+   text-align: center;
+   font-family: "YouYuan";
+   font-size: 20px;
+   vertical-align: top;
+}
+.btn_show:hover{
+    background-color: rgb(164, 168, 167);
+}
+.btn_show:active{
+    background-color: rgb(103, 105, 105);
+}
+.btn_show:visited{
+    background-color: rgb(103, 105, 105);
+}
+#p_name{
+    color: #000;
+}
+#span_number{
+    color: #000;
+}
+#span_class{
+    color: #000;
+}
+#show_span1{
+    color:#000;
+    font-family: "YouYuan";
+    font-size: 20px;
+    height: 25px;
+    vertical-align: top;
+}
+#show_span2{
+    color:#000;
+    font-family: "YouYuan";
+    font-size: 20px;
+    height: 25px;
+    vertical-align: top;
+}
+#show_span3{
+    color:#000;
+    font-family: "YouYuan";
+    font-size: 20px;
+    height: 25px;
+    vertical-align: top;
+}
+#show_mes{
+    margin: 10px;
+    text-align: center;
+    height: 80px;
+    width: 30%;
+    padding: 5px;
+    display: inline-block;
+    font-family: "YouYuan";
+    vertical-align: top;
+   
+}
+.btn_show_rec{
+   width: 100%;
+   height: 35px;
+   margin-top: 10px;
+   padding: 5px;
+   background-color: rgb(185, 181, 181);
+   color:#fff;
+   text-align: center;
+   font-family: "YouYuan";
+   font-size: 20px;
+}
+.btn_show_rec:hover{
+    background-color: rgb(164, 168, 167);
+}
+.btn_show_rec:active{
+    background-color: rgb(103, 105, 105);
+}
+.btn_show_rec:visited{
+    background-color: rgb(164, 168, 167);
+}
+#show_record{
+    margin: 10px auto;
+    text-align: center;
+    height: 1000px;
+    width: 95%;
+    padding: 5px;
+    font-family: "YouYuan";
+   
+}
+.td_show{
+    color: #000;
+}
+ table tr td{
+    border:1px solid #0a0a0a;
+    padding: 0;
+}
+table { 
+    width: 100%; 
+    min-height: 25px; 
+    line-height: 25px; 
+    text-align: center; 
+    border-collapse: collapse;
+} 
+#firstrow{
+    background-color: rgb(189, 192, 191);
+    color: #FFFFFF;
+}
+.empty{
+    height:20px;
+    width:100%;
+}
