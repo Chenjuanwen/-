@@ -7,21 +7,22 @@ var storage=window.localStorage;//获取当前locastorage中值
 
 function show_information(){//用于与数据库沟通显示用户数据
 var userid = storage.id;
-var show_mes = new Array(); //存放从后台取得的数据，
-    for(var k=0;k<30;k++){ //一维长度为一共的题目总数
-		suanshi[k]=new Array(); //声明二维，每一个一维数组里面的一个元素都是一个数组，这个数组有两个元素，都是字符形式；
-								//第一个是运算式，第二个是答案（运算式带等号）
-    }
+// var show_mes = new Array(); //存放从后台取得的数据，
+//     for(var k=0;k<30;k++){ //一维长度为一共的题目总数
+// 		show_mes[k]=new Array(); //声明二维，每一个一维数组里面的一个元素都是一个数组，这个数组有两个元素，都是字符形式；
+// 								//第一个是运算式，第二个是答案（运算式带等号）
+//     }
 //用于将从数据库中获取的数据输出到表格中,需要完善！！！！！！！！！！
-for(var i=0;i<30;i++){
-    for(var j=1;j<=5;j++){
-        var show_td = document.getElementById(show_mes[i][0]+String(j));
-        show_td.innerHTML = show_mes[i][j];
-    }
-}
+// for(var i=0;i<30;i++){
+//     for(var j=1;j<=5;j++){
+//         var show_td = document.getElementById(show_mes[i][0]+String(j));
+//         show_td.innerHTML = show_mes[i][j];
+//     }
+// }
   
 //if(localStorage.getItem("id")==null)
-//alert(userid);
+alert(userid);
+
     
     $.ajax({
         type: "post",
