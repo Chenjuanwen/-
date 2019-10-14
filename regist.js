@@ -4,6 +4,13 @@ function regist_result(){
     var idnumber =  window.document.getElementById("idnumber"); 
     var pass1 = window.document.getElementById("password1");   
     var pass2 = window.document.getElementById("password2"); 
+    var identity = $('input:radio:checked').val;//获取身份信息
+    //将身份信息存储到本地
+    //！！！！！！！！！身份信息未传给后端
+    if(identity=='1')
+        storage.setItem("identity",'1');
+    else
+        storage.setItem("identity",'0');
     //alert(idnumber);  
     if (setname.value == "") 
     {         
@@ -43,11 +50,11 @@ function regist_result(){
                 {
                     if(json.exist==0)
                     {
-                        //alert("注册成功！");
+                        alert("注册成功！");
                         storage["id"]=idnumber.value;//写入id到localStorage
                         storage.setItem("password",pass1);//写入password到localStorage
                         //var c=storage.id;
-                        alert(localStorage.id);
+                        //alert(localStorage.id);
                         window.open('index.html');
                     }
                       
