@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="css/tea_info.css" />
+    <script type="text/javascript" src="js/tea_info.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="//cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script> -->
+
+
+</head>
+
+<body>
+    <div class="secondbg">
+        <div class="first_title">
+
+            <div style="float:right;">
+
+                    <a href="#" style="color:rgb(49, 120, 133);" onclick="javascript:addfavorite();">加入收藏</a>
+    
+                    <a style="color:rgb(31, 30, 31);" href="suggestion.html" target="_blank" rel="nofollow">意见/报错</a>
+            </div>
+            
+            <div style="float:left;">
+
+                <a href="index.html" target="_self">四则运算题库</a>
+            </div>
+            
+
+        </div>
+        <div id="personal_center">
+
+            <h1 style="color:#000;" id="usercenter" class="leixing" style="float:none" text-align="center;" width="120px;" height="28px;">个人中心</h1>
+
+        </div>
+        <div class="huixian"></div>
+        <div class="usermessage">
+            <script>
+                show_information();//用于显示信息
+            </script>
+        
+                <p id="user_name" class="user_mes">姓名：<i id="p_name"> </i></p>
+                <p id="user_number" class="user_mes">工号：<i id="span_number"></i></p>
+                <!-- <p id="user_class" class="user_mes">年级：<i id="span_class"></i></p> -->
+            
+        </div>
+        <div class="huixian"></div>
+            <div id="select_button">
+                    <div id="show_mes">
+                            <button class="btn_show" style="cursor:pointer" onclick="show_allnum()">做题总数</button>
+                            <p id="show_span1" style="color: #000;"></p>
+                        </div>
+                    <div id="show_mes">
+                            <button class="btn_show" style="cursor:pointer" onclick="show_alltime()">做题总时长</button>
+                            <p id="show_span2" style="color: #000;"></p>
+                        </div>
+                    <div id="show_mes">
+                            <button class="btn_show" style="cursor:pointer" onclick="show_percent()">正确率</button>
+                            <p id="show_span3" style="color: #000;"></p>
+                        </div>
+            </div>
+            <div id="stu_info">
+                    <p class="btn_show_rec" >学生信息</button>
+                        <div id="frame">
+                                        <div class="timu_select">
+                                                        <h3  class="xueqi" text-align="left;" >一年级上</h3>
+                                                        <div class="mihuixian"></div>
+                                                        <p style="color: #000;">单元
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn101" onclick="tableload('1','1');" >一</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn102" onclick="tableload('1','2');" >二</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn103" onclick="tableload('1','3');" >三</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn104" onclick="tableload('1','4');" >四</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn105" onclick="tableload('1','5');" >五</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn106" onclick="tableload('1','6');" >六</button></p>
+                                                        
+                                                        <br>
+                                                        <h3  class="xueqi" text-align="left;" >一年级下</h3>
+                                                        <div class="mihuixian"></div>
+                                                        <p style="color: #000;">单元
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn111" onclick="tableload('2','1');" >一</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn112" onclick="tableload('2','2');" >二</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn113" onclick="tableload('2','3');" >三</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn114" onclick="tableload('2','4');" >四</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn115" onclick="tableload('2','5');" >五</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn116" onclick="tableload('2','6');" >六</button></p>
+                                                        
+                                                        <br>
+                                                        <br>
+                                                        <h3  class="xueqi" text-align="left;" >二年级上</h3>
+                                                        <div class="mihuixian"></div>
+                                                        <p style="color: #000;">单元 
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn201" onclick="tableload('3','1');" >一</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn202" onclick="tableload('3','2');" >二</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn203" onclick="tableload('3','3');" >三</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn204" onclick="tableload('3','4');" >四</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn205" onclick="tableload('3','5');" >五</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn206" onclick="tableload('3','6');" >六</button></p>
+                                                       
+                                                        <br>
+                                                        <h3  class="xueqi" text-align="left;" >二年级下</h3>
+                                                        <div class="mihuixian"></div>
+                                                        <p style="color: #000;">单元
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn211" onclick="tableload('4','1');" >一</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn212" onclick="tableload('4','2');" >二</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn213" onclick="tableload('4','3');" >三</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn214" onclick="tableload('4','4');" >四</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn215" onclick="tableload('4','5');" >五</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn216" onclick="tableload('4','6');" >六</button></p>
+                                                        
+                                                        <br>
+                                                        <br>
+                                                        <h3  class="xueqi" text-align="left;" >三年级上</h3>
+                                                        <div class="mihuixian"></div>
+                                                        <p style="color: #000;">单元
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn301" onclick="tableload('5','1');" >一</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn302" onclick="tableload('5','2');" >二</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn303" onclick="tableload('5','3');" >三</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn304" onclick="tableload('5','4');" >四</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn305" onclick="tableload('5','5');" >五</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn306" onclick="tableload('5','6');" >六</button></p>
+                                                        <br>
+                                                        <h3  class="xueqi" text-align="left;" >三年级下</h3>
+                                                        <div class="mihuixian"></div>
+                                                        <p style="color: #000;">单元
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn311" onclick="tableload('6','1');" >一</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn312" onclick="tableload('6','2');" >二</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn313" onclick="tableload('6','3');" >三</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn314" onclick="tableload('6','4');" >四</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn315" onclick="tableload('6','5');" >五</button>
+                                                                <button class="sel_grade" style="cursor:pointer" id="btn316" onclick="tableload('6','6');" >六</button></p>
+                                                        
+                                                        <br>
+                                                        <br>
+                            
+                                                </div>
+                                                <!-- timu_select end -->
+                                                <div id="right_table">
+                                                       <p style="color:#fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+                                                       <p style="color: #fff;">fff</p>
+
+                                                </div>
+                        </div>
+                      
+                   
+                    
+            </div>
+
+                        <div class="empty"></div>
+                        <div class="empty"></div>
+
+                        
+                            
+                
+                
+        </div>
+            
+    
+    
+
+
+</body>
+
+</html>
