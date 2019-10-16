@@ -6,10 +6,10 @@
     border: 0;
 }
 html{
-    height:100%;
+    min-height:100%;
 }
 body {
-    height: 100%;
+    min-height:100%;
     margin: 0 auto;
     background-color: #000;
     text-align: center;
@@ -25,6 +25,7 @@ body {
     height: 100%;
     margin:0 auto;
     text-align:center;
+    opacity: 0.9;
     }
 .first_title{
     clear: both;
@@ -78,7 +79,7 @@ input.text{
 
 .all_an_1 {    
     font-size: 14px;    
-    font-family: 宋体;
+    font-family: "YouYuan";
     width: 120px;    
     height: 28px;    
     line-height: 28px;   
