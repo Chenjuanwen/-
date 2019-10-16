@@ -3,10 +3,9 @@ var alltime;
 var percent;
 var allnum;
 var storage=window.localStorage;//获取当前locastorage中值
-
+var userid = storage.id;//获取用户id
 
 function show_information(){//用于与数据库沟通显示用户数据
-var userid = storage.id;
 // var show_mes = new Array(); //存放从后台取得的数据，
 //     for(var k=0;k<30;k++){ //一维长度为一共的题目总数
 // 		show_mes[k]=new Array(); //声明二维，每一个一维数组里面的一个元素都是一个数组，这个数组有两个元素，都是字符形式；
@@ -21,7 +20,7 @@ var userid = storage.id;
 // }
   
 //if(localStorage.getItem("id")==null)
-alert(userid);
+//alert(userid);
 
     
     $.ajax({
@@ -69,4 +68,27 @@ function show_percent(){
     var show = document.getElementById("show_span3");//用于获取显示位置
     show.innerHTML = percent;
     
+}
+//传消息给后端使其显示表格
+function tableload(sgrade){
+    //获取年级和单元
+    var grade = sgrade;
+    $.ajax({
+		type: "post",
+		url: "php/ques_gen.php",//指示使用的PHP文件!!!!!!!!!!!!!!!!!!!!!!!!!要改
+		data: {id:userid,grade:grade,},//提交到php的数据
+		dataType: "json",
+		success: function(marks){//返回表单
+            //将以json字符串格式返回的数据变成json的对象
+            var json='';
+            json = eval("("+marks+")"); 
+            var showtable=window.document.getElementById("right_table");
+            showtable.innerHTML=json;//展示返回表单
+        },
+        //未成功接收时的处理
+        error:function(marks){
+            //提示连接出错
+            alert("服务器连接出错！");
+        }
+	  });  
 }
