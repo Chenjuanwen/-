@@ -39,18 +39,36 @@ function tableload(sgrade,sunit){
     var unit = sunit;
     $.ajax({
 		type: "post",
-		url: "php/ques_gen.php",//指示使用的PHP文件
+		url: "php/ques_gen.php",//指示使用的PHP文件!!!!!!!!!!!!!!!要改
 		data: {grade:grade,unit:unit},//提交到php的数据
 		dataType: "json",
 		success: function(marks){//返回表单
             //将以json字符串格式返回的数据变成json的对象
-            var json='';
-            json = eval("("+marks+")"); 
-            var showtable=window.document.getElementById("right_table");
-            showtable.innerHTML=json;//展示返回表单
+            var showtable=window.document.getElementById("show_table");
+            showtable.innerHTML=marks;//展示返回表单
         },
         //未成功接收时的处理
-        error:function(student_data){
+        error:function(marks){
+            //提示连接出错
+            alert("服务器连接出错！");
+        }
+	  });  
+}
+//查询学生信息
+function stu_tableload(){
+    var stu_id=window.document.getElementById("findid");
+    $.ajax({
+		type: "post",
+		url: "php/ques_gen.php",//指示使用的PHP文件!!!!!!!!!!!!!!!!!!!!!!要改
+		data: {id:stu_id.value},//提交到php的数据
+		dataType: "json",
+		success: function(table){//返回表单
+            //将以json字符串格式返回的数据变成json的对象
+            var showtable=window.document.getElementById("show_table");
+            showtable.innerHTML=table;//展示返回表单
+        },
+        //未成功接收时的处理
+        error:function(marks){
             //提示连接出错
             alert("服务器连接出错！");
         }
